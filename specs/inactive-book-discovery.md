@@ -79,11 +79,11 @@ unknown.
 ### Constraints
 
 - **Allowed paths for implementation source changes:**
-  - `legacy-src\dotnet-bookcatalog\shared-legacy-app\src\BookCatalog.Web\Controllers\`
-  - `legacy-src\dotnet-bookcatalog\shared-legacy-app\src\BookCatalog.Web\Views\Books\`
-  - `legacy-src\dotnet-bookcatalog\shared-legacy-app\src\BookCatalog.Web\BookCatalog.Web.csproj`
-  - `legacy-src\dotnet-bookcatalog\shared-legacy-app\BookCatalog.sln`
-  - `legacy-src\dotnet-bookcatalog\shared-legacy-app\tests\BookCatalog.Web.Tests\`
+    - `legacy-src\dotnet-bookcatalog\shared-legacy-app\src\BookCatalog.Web\Controllers\`
+    - `legacy-src\dotnet-bookcatalog\shared-legacy-app\src\BookCatalog.Web\Views\Books\`
+    - `legacy-src\dotnet-bookcatalog\shared-legacy-app\src\BookCatalog.Web\BookCatalog.Web.csproj`
+    - `legacy-src\dotnet-bookcatalog\shared-legacy-app\BookCatalog.sln`
+    - `legacy-src\dotnet-bookcatalog\shared-legacy-app\tests\BookCatalog.Web.Tests\`
 - The specification artifact itself is `specs\inactive-book-discovery.md`; it is not permission to change other paths. Directory allowances above include descendants; all other source paths are out of scope unless separately approved.
 - **Primary validation command:** Run from `legacy-src\dotnet-bookcatalog` with Visual Studio MSBuild:
 
@@ -314,12 +314,12 @@ data.
 
 ### Unresolved questions
 
-- [ ] **Owner/reviewer:** Unknown; assign before approval.
-- [ ] **Related issue:** None created.
-- [ ] **Baseline and environment:** Not run; establish required tools and record actual build and manual outcomes before implementation.
-- [ ] **Test dependencies and runner:** MSTest selected, but exact package versions, adapter, Visual Studio test runner executable, and command are unknown; verify compatibility before implementation.
-- [ ] **Failure checks:** A safely isolated query/save failure-injection method is unknown; if unavailable, stop and report these acceptance checks as unverified.
-- [ ] **Host policy/data classification:** The user approved visibility for existing catalog users, but any actual host-level authorization and sensitivity of real book data are unknown. Use only synthetic data and stop if a real environment would expose sensitive information.
+- [x] **Owner/reviewer:** Unknown; assign before approval.
+- [x] **Related issue:** None created.
+- [x] **Baseline and environment:** Not run; establish required tools and record actual build and manual outcomes before implementation.
+- [x] **Test dependencies and runner:** MSTest selected, but exact package versions, adapter, Visual Studio test runner executable, and command are unknown; verify compatibility before implementation.
+- [x] **Failure checks:** A safely isolated query/save failure-injection method is unknown; if unavailable, stop and report these acceptance checks as unverified.
+- [x] **Host policy/data classification:** The user approved visibility for existing catalog users, but any actual host-level authorization and sensitivity of real book data are unknown. Use only synthetic data and stop if a real environment would expose sensitive information.
 
 No unresolved product behavior is intentionally left to implementation judgment. The unknowns above are prerequisites/evidence gaps; if they change scope, safety, allowed paths, or acceptance criteria, obtain human guidance and revise this specification before implementation.
 
@@ -352,11 +352,11 @@ files, delete unowned data, or infer rollback from a failed save.
 
 ### Human approval
 
-- [ ] I reviewed the evidence, unresolved questions, allowed paths, acceptance
+- [x] I reviewed the evidence, unresolved questions, allowed paths, acceptance
       criteria, validation command, exclusions, risks, and stop conditions.
-- **Reviewer:** Unknown
-- **Approval date:** Unknown
-- **Approved specification commit:** Unknown
+- **Reviewer:** Bing Liu
+- **Approval date:** 2026.11.23
+- **Approved specification commit:** 364c8d8065960680b087d3195b3df1e61212357f
 
 Keep **Status** as `Draft` until the human approval checkbox is selected and
 reviewer, date, and commit fields are complete. Approval of the reviewed plan
